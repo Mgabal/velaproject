@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Vela</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+
+    <!-- Top Banner Section -->
+    <section id="banner">
+        <div class="banner-content">
+            <h1 class="banner-title">Discover Vela</h1>
+            <p class="banner-subtitle">Style, Elegance, and Quality</p>
+        </div>
+    </section>
+
+    <!-- Who We Are Section -->
+    <section id="who-we-are" class="fade-in">
+        <h2>Who We Are</h2>
+        <p>
+            Vela is a leading fashion retailer specializing in stylish, high-quality clothing for men, women, and children. With a passion for elegance and comfort, we strive to provide our customers with the latest trends and timeless classics.
+        </p>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section id="mission-vision">
+        <div class="content">
+            <h2>Our Mission & Vision</h2>
+            <div class="mission">
+                <h3>Our Mission</h3>
+                <p>To inspire confidence and provide quality clothing that combines fashion, comfort, and sustainability.</p>
+            </div>
+            <div class="vision">
+                <h3>Our Vision</h3>
+                <p>To be a global leader in the fashion industry by setting trends and exceeding customer expectations through exceptional service and a curated selection of premium apparel.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Offer Section -->
+    <section id="what-we-offer">
+        <h2>What We Offer</h2>
+        <div class="offers">
+            <div class="offer">
+                <h3>Men's Fashion</h3>
+                <p>Explore our exclusive range of tailored suits, casual wear, and accessories.</p>
+            </div>
+            <div class="offer">
+                <h3>Women's Fashion</h3>
+                <p>Discover the latest in women's clothing, from chic dresses to trendy outerwear.</p>
+            </div>
+            <div class="offer">
+                <h3>Kids' Fashion</h3>
+                <p>Stylish and comfortable clothing for the little ones, designed to last.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section id="our-story">
+        <h2>Our Story</h2>
+        <p>
+            Founded in 2024, Vela started as a small boutique with a big dream — to bring high-quality, fashionable clothing to people who appreciate style and elegance. Over the years, we've grown into a trusted name in the fashion industry, offering a wide range of apparel to meet the diverse needs of our customers.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Vela. All Rights Reserved.</p>
+        <p>Contact us: <a href="mailto:sami.haimouda@vela.ma">sami.haimouda@vela.ma</a></p>
+    </footer>
+
+</body>
+</html>
+
+
+<style>
+    /* General Styles */
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #222;
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Banner Section */
+#banner {
+    background: linear-gradient(135deg, #69b187 50%, #68b087 100%);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.banner-content {
+    animation: slideIn 1.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    0% { opacity: 0; transform: translateY(-30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.banner-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.banner-subtitle {
+    font-size: 24px;
+    margin: 10px 0 0;
+}
+
+/* Fade-In Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Mission & Vision Section */
+#mission-vision .content {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+#mission-vision .mission, .vision {
+    width: 45%;
+    animation: fadeUp 1s ease-in-out;
+}
+
+@keyframes fadeUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* What We Offer Section */
+#what-we-offer {
+    background-color: #fff;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.offers {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.offer {
+    width: 30%;
+    background-color: #68b087;
+    color: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.offer:hover {
+    transform: scale(1.05);
+}
+
+/* Our Story Section */
+#our-story {
+    background-color: #f8f8f8;
+    padding: 50px;
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #68b087;
+    text-decoration: none;
+}
+
+</style>

@@ -1,0 +1,525 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  height: 50px; /* Adjust according to logo size */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  padding: 5px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background: linear-gradient(to right, #00c9ff, #92fe9d);
+}
+
+.hero-text h1 {
+  font-size: 3em;
+  color: white;
+}
+
+.hero-image img {
+  width: 300px; /* Adjust this size based on image dimensions */
+}
+
+.shop-btn {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.products {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.product-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.product-item img {
+  width: 150px; /* Adjust based on actual image size */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.products-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 16px;
+  color: #333;
+}
+
+.pagination-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.pagination-buttons button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.pagination-buttons button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+footer .footer-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .footer-column h4 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .products {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .hero-image img {
+      width: 200px; /* Adjust for smaller screens */
+  }
+}
+
+.products-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.product-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+  transform: scale(1.05);
+}
+
+.pagination-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.pagination-buttons button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.pagination-buttons button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+
+.pagination-buttons button {
+  padding: 10px 20px;
+  background-color: #007bff; /* Make the button a friendly blue color */
+  color: white;
+  border: none;
+  border-radius: 25px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 1em; /* Slightly bigger and friendlier text size */
+}
+
+.pagination-buttons button:hover {
+  background-color: #0056b3; /* Darken the blue on hover */
+  transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+.pagination-buttons button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 10px; /* Add a little space between the buttons */
+}
+
+.pagination-buttons button:active {
+  transform: scale(0.95); /* Button press effect */
+  background-color: #004494; /* Darker on click */
+}
+
+
+/* Product Card Styles */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  justify-content: space-around;
+}
+
+.product-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.product-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.product-item h3 {
+  font-size: 1.25em;
+  margin: 10px 0;
+}
+
+.product-item p {
+  font-size: 1.1em;
+  color: #333;
+}
+
+.product-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-item h3, .product-item p {
+  transition: color 0.3s ease;
+}
+
+.product-item:hover h3, .product-item:hover p {
+  color: #007bff; /* You can adjust this to any accent color */
+}
+
+/* Header Styles */
+header {
+  background-color: floralwhite;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+  height: 60px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+header nav ul li a:hover {
+  color: #00c9ff;
+}
+
+.search-box input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-box button {
+  padding: 8px;
+  border: none;
+  background-color: #00c9ff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.search-box button:hover {
+  background-color: #007bff;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #222;
+  color: white;
+  padding: 30px 20px;
+}
+
+footer .footer-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .footer-column h4 {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+footer .footer-column p {
+  font-size: 0.95em;
+  color: #ccc;
+}
+
+footer .subscribe input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+footer .subscribe button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #00c9ff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+footer .subscribe button:hover {
+  background-color: #007bff;
+}
+
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+/* Add some padding for the navbar items */
+.nav-item a {
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* Change the navbar background color */
+.navbar {
+  background-color: #f8f9fa;
+}
+
+form .form-control {
+  width: 200px;
+}
+
+/* On smaller screens, reduce the width of the search input */
+@media (max-width: 768px) {
+  form .form-control {
+      width: 100%;
+  }
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #f8f9fa;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-link {
+  font-size: 18px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+/* Custom Toggler Icon */
+.navbar-toggler-icon {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/1828/1828859.png");
+  background-size: contain;
+}
+
+.custom-toggler {
+  border-color: transparent;
+}
+
+/* Animated Dropdown on Small Screens */
+
+
+.collapse.show {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+}
+
+/* Search Bar Adjustments */
+form .form-control {
+  width: 200px;
+  transition: width 0.3s;
+}
+
+@media (max-width: 768px) {
+  form .form-control {
+      width: 100%;
+  }
+}
+
+/* Make Navbar Fixed at Top */
+.navbar.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+/* Additional Styles for Smooth Animations */
+.navbar-collapse {
+  max-height: 400px;
+  overflow-y: auto;
+  transition: max-height 0.3s ease-in-out;
+}
+
+
+.collapse:not(.show) {
+    
+    transition: visibility 0s linear 0.33s, opacity 0.33s ease-in-out;
+}
+
+
+   
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
